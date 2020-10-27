@@ -1,0 +1,49 @@
+@import "reset";
+
+$main_color: #76CCCA;
+$font_color: #515151;
+$hover_corel: #AEC24C;
+$sp: 768px;
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+body {
+  .wrapper {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 4%;
+  }
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      width: 210px;
+      margin-top: 14px;
+    }
+    .main-nav {
+      display: flex;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      margin-top: 34px;
+      list-style: none;
+      li {
+        margin-left: 36px;
+        a {
+          color: #432;
+        }
+        :hover {
+          color: #0bd;
+        }
+      }
+    }
+  }
+  .wrapper {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 4%;
+  }
+}
